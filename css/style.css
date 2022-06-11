@@ -14,7 +14,7 @@ h1{
 }
 
 h3{
-    text-align: left;
+    text-align: center;
 }
 
 label{
@@ -41,18 +41,16 @@ input{
    }
   
   input:checked{ 
-    box-shadow: inset 0 0 0 20px #5f0a87;
+    box-shadow: inset 0 0 0 20px #673FD7;
     background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
     
 } 
 
 .cards{
-    display: flex;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    padding: 50px;
-    grid-gap: 40px;
-    float: left;
+    margin: 25px;
+    justify-content: center;
+    text-align: center;
 }
 .card{
     background-color: #1c1b29;
@@ -66,6 +64,8 @@ input{
 
 .details{
     padding: 20px 10px;
+    justify-content: center;
+    text-align: center;
     
 }
 .details>h3{
@@ -74,3 +74,41 @@ input{
     font-size: 25px;
     margin: 10px 0 15px 0;
 }
+
+.button {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 50px;
+    font-weight: 500;
+    height: 1.8rem;
+    padding: 0 0.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .8s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .5s;
+}
+
+input[type=text]{
+    width: 350px;
+    color: white;
+    text-align: center;
+    height: 50px;
+    position: relative;
+    font-size: 0.8em;
+    background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    display: inline-block;
+    border-radius: 9999em;
+}
+

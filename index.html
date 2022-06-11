@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script/script.js"></script>
+    <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <title>To Do</title>
 </head>
@@ -14,8 +14,13 @@
     <div class="cards">
         <div class="card card1">
             <div class="details">
-                <h3>Lista 1</h3>
-                <input type="checkbox" onclick="verificarCheckbox()" name="#1" id="checkbox"> <label for="#1">aaaaaaa</label>
+                <h3>To Do</h3>
+                <input type="checkbox" onclick="verificarCheckbox()" id="checkbox"> <label>aaaaaaaaaaaaa</label><br>
+                <input type="checkbox" onclick="verificarCheckbox()" id="checkbox"> <label>aaaaaaaaaaaaaaaaa</label>
+                <div id="btn-add">
+                    <button class="button" role="button" onclick="add()" >+</button>
+                    <input type="text" id="input" placeholder="Ex: Tomar um chá">
+                </div>
             </div>
         </div>
     </div>
